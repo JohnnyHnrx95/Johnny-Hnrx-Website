@@ -17,6 +17,8 @@
   --page-pad: 34px;
   --section-gap: 130px;
 }
+
+ .section, [id] { scroll-margin-top: 84px; }
  
 *, *::before, *::after { box-sizing: border-box; }
  
