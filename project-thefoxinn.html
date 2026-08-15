@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>The Fox Inn, Cheltenham — Johnny Hnrx</title>
+<meta name="description" content="Interiors and detail shots for a bar in Santos, photographed across two afternoons as the light moved through the room.">
+
+<meta property="og:title" content="Parler, Lisbon — Johnny Hnrx">
+<meta property="og:description" content="Interiors and detail shots for a bar in Santos, photographed across two afternoons as the light moved through the room.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/og-image.jpg">
+
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="brand" href="index.html">Johnny Hnrx</a>
+
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+    <span class="nav-toggle__bar"></span>
+    <span class="nav-toggle__bar"></span>
+    <span class="sr-only">Open menu</span>
+  </button>
+
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" aria-current="page">work</a>
+    <a href="about.html">about</a>
+    <a href="contact.html">contact</a>
+  </nav>
+
+  <a class="header-social" href="https://instagram.com/johnnyhnrx_" rel="me noopener" target="_blank">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/>
+    </svg>
+    <span class="sr-only">Instagram</span>
+  </a>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="back-link reveal"><a href="index.html">&#8592; Work</a></p>
+
+    <div class="project reveal">
+      <div class="project__head">
+        <h1 class="project__title">The Fox Inn, Cheltenham</h1>
+        <p class="project__meta">Hospitality &middot; 2026</p>
+      </div>
+
+      <div class="project__grid" data-gallery>
+        <figure class="gallery__item">
+          <img src="assets/images/thefox-outside-view.jpg" alt="" width="1350" height="1800" fetchpriority="high">
+        </figure>
+        <figure class="gallery__item">
+          <img src="assets/images/thefox-colourful-chairs.jpg" alt="" width="1350" height="1800">
+        </figure>
+        <figure class="gallery__item">
+          <img src="assets/images/thefox-brolly.jpg" alt="" width="1349" height="1800" loading="lazy">
+        </figure>
+      </div>
+    </div>
+
+    <nav class="project-nav reveal">
+      <a href="project-parler.html">&#8592; Parler Bar</a>
+      <a href="project-lardon.html">Lardon Restaurant &#8594;</a>
+    </nav>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="copyright">&copy; <span id="year">2026</span> Johnny Hnrx. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close viewer">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+  <img class="lightbox__img" id="lightboxImg" alt="">
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

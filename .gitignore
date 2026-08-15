@@ -4,3 +4,4 @@ node_modules/
 .vscode/*
 !.vscode/extensions.json
 *.log
+assets/images/original/
