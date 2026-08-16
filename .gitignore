@@ -5,3 +5,5 @@ node_modules/
 !.vscode/extensions.json
 *.log
 assets/images/original/
+assets/images-out/
+assets/images-old/
