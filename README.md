@@ -34,7 +34,7 @@ Placeholders are grey SVG files sized to match the layout. Swap in your own file
 
 1. Export each photo as JPG or WebP, longest edge 1600–2000px, quality 80. Aim under 400KB per file.
 2. Save them into `assets/images/`.
-3. In `index.html`, change each `src="assets/images/placeholder-01.svg"` to your filename, for example `src="assets/images/lisbon-bar-table.jpg"`.
+3. In `index.html`, change each `src="/assets/images/placeholder-01.svg"` to your filename, for example `src="/assets/images/lisbon-bar-table.jpg"`.
 4. Rewrite each `alt` attribute to describe the photo. Alt text drives image search and screen readers.
 5. Replace `avatar.svg` with a square headshot (400x400px is plenty) and `og-image.jpg` with a 1200x630px share image.
 

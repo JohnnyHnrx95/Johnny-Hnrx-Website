@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://johnnyhnrx.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://johnnyhnrx.com/</loc></url>
+  <url><loc>https://johnnyhnrx.com/about/</loc></url>
+  <url><loc>https://johnnyhnrx.com/contact/</loc></url>
+  <url><loc>https://johnnyhnrx.com/privacy-policy/</loc></url>
+  <url><loc>https://johnnyhnrx.com/project-lardon/</loc></url>
+  <url><loc>https://johnnyhnrx.com/project-nina/</loc></url>
+  <url><loc>https://johnnyhnrx.com/project-thefoxinn/</loc></url>
+  <url><loc>https://johnnyhnrx.com/project-mollusk/</loc></url>
+  <url><loc>https://johnnyhnrx.com/project-personal-project/</loc></url>
+  <url><loc>https://johnnyhnrx.com/project-yosemite/</loc></url>
+  <url><loc>https://johnnyhnrx.com/project-parler/</loc></url>
 </urlset>
