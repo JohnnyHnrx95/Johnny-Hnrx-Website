@@ -58,26 +58,13 @@ if (lightbox && groups.length) {
   let activeSet = [];
   let currentIndex = 0;
   let lastFocused = null;
-  let loadToken = 0;
 
   const showImage = (index) => {
     if (!activeSet.length) return;
     currentIndex = (index + activeSet.length) % activeSet.length;
     const source = activeSet[currentIndex];
-    const fullSrc = source.dataset.full || source.currentSrc || source.src;
-
-    /* Blank the image while the full-res photo loads, then fade it in via
-       CSS (.is-loaded). Token guards a stale image's load event from
-       firing the fade-in after the user has moved to a different photo. */
-    const token = ++loadToken;
-    lightboxImg.classList.remove('is-loaded');
-    lightboxImg.removeAttribute('src');
+    lightboxImg.src = source.currentSrc || source.src;
     lightboxImg.alt = source.alt;
-    lightboxImg.onload = () => {
-      if (token === loadToken) lightboxImg.classList.add('is-loaded');
-    };
-    lightboxImg.src = fullSrc;
-
     const single = activeSet.length < 2;
     prevBtn.hidden = single;
     nextBtn.hidden = single;
