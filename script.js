@@ -58,13 +58,30 @@ if (lightbox && groups.length) {
   let activeSet = [];
   let currentIndex = 0;
   let lastFocused = null;
- 
+  let loadToken = 0;
+
   const showImage = (index) => {
     if (!activeSet.length) return;
     currentIndex = (index + activeSet.length) % activeSet.length;
     const source = activeSet[currentIndex];
-    lightboxImg.src = source.currentSrc || source.src;
+    const thumbSrc = source.currentSrc || source.src;
+    const fullSrc = source.dataset.full;
+
+    /* Paint the already-cached thumbnail immediately, then swap in the
+       full-res image once it's loaded. Token guards against a stale
+       preload landing after the user has moved to a different image. */
+    const token = ++loadToken;
+    lightboxImg.src = thumbSrc;
     lightboxImg.alt = source.alt;
+
+    if (fullSrc && fullSrc !== thumbSrc) {
+      const preload = new Image();
+      preload.onload = () => {
+        if (token === loadToken) lightboxImg.src = fullSrc;
+      };
+      preload.src = fullSrc;
+    }
+
     const single = activeSet.length < 2;
     prevBtn.hidden = single;
     nextBtn.hidden = single;

@@ -617,7 +617,7 @@ main > .section:first-of-type { padding-top: 46px; }
 /* ---------- Responsive ---------- */
 
 @media (max-width: 1000px) {
-  .gallery { column-count: 2; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 900px) {
@@ -651,7 +651,7 @@ main > .section:first-of-type { padding-top: 46px; }
 }
 
 @media (max-width: 560px) {
-  .gallery { column-count: 1; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
   .project__grid { gap: 14px; }
   .project__grid .gallery__item img { height: 210px; }
   .project__head { flex-direction: column; gap: 6px; }
