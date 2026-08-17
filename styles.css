@@ -565,6 +565,12 @@ main > .section:first-of-type { padding-top: 46px; }
   max-width: min(92vw, 1200px);
   max-height: 88vh;
   border-radius: var(--radius);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.lightbox__img.is-loaded {
+  opacity: 1;
 }
 
 .lightbox__close,
@@ -672,4 +678,5 @@ main > .section:first-of-type { padding-top: 46px; }
   .rule.reveal, .rule.reveal.is-visible { transform: none; transition: none; }
   .gallery__item { transition-delay: 0s; }
   .gallery__item img { transition: none; }
+  .lightbox__img { transition: none; }
 }
