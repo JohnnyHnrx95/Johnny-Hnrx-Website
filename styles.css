@@ -519,6 +519,21 @@ main > .section:first-of-type { padding-top: 46px; }
 /* Honeypot: hidden from people, visible to bots that fill every field */
 .hp { position: absolute; left: -9999px; opacity: 0; }
 
+/* The homepage h1 was screen-reader-only, so the page's strongest text signal was invisible.
+   Set in the same 12px uppercase register as the figcaptions so it reads as a label, not a headline. */
+
+.site-tagline {
+  max-width: var(--max-width);
+  margin: 30px auto 0;
+  padding: 0 var(--page-pad);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
