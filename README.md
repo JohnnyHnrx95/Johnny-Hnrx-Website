@@ -61,7 +61,7 @@ Alternatives: Netlify Forms (requires hosting on Netlify), Getform, Basin, or re
 
 | What | Where |
 | --- | --- |
-| Instagram URL | `index.html`, `href="https://instagram.com/yourhandle"` |
+| Instagram URL | `index.html`, `href="https://instagram.com/johnnyhnrx_"` |
 | Page title and meta description | `index.html`, `<head>` |
 | Bio and service copy | `index.html`, `.intro__bio` and `.service` blocks |
 | Colours, fonts, spacing | `styles.css`, `:root` variables at the top |
